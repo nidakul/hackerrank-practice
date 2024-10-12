@@ -1,6 +1,7 @@
- public static void miniMaxSum(List<int> arr)
+  public static void miniMaxSum(List<int> arr)
     {
-        arr = arr.OrderBy(n => n).ToList();
+        //arr = arr.OrderBy(n => n).ToList();
+        arr.Sort();
         long minSum = 0, maxSum=0;
         for(int i = 0; i<arr.Count - 1; i++){
             minSum += arr[i];
